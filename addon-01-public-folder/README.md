@@ -28,7 +28,7 @@ file.
 ├── index.js
 ├── package.json
 ├── public
-│   └── example.txt
+│   └── example.txt -----> This is the file we're adding
 ├── testem.js
 ├── tests
 │   └── ...
