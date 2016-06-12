@@ -1,6 +1,6 @@
 # addon's /public folder
 
-Files inside the addon's `/public` folder are copied to `/<my-addon>/` folder at build time where `<my-addon>` is replaced by your addon's name.
+Files inside addon's `/public` folder are copied to `/<my-addon>/` folder at build time where `<my-addon>` is replaced by your addon's name.
 
 You can reference these files from your project using a full path `/<my-addon>/a-file.xyz`.
 
@@ -12,10 +12,25 @@ _This is part of [ember-addon-examples](https://github.com/san650/ember-addon-ex
 
 ## Example
 
-Look at the file structure and notice that we're adding a `/public/example.txt`
-file.
 
-```
+<table>
+  <tr>
+    <th>source</th>
+    <th>build</th>
+  </tr>
+  <tr>
+    <td>
+      Look at the file structure and notice that we're adding a
+      /public/example.txt file.
+    </td>
+    <td>
+      This file is then copied to /addon-01-public-folder/<wbr>example.txt
+      folder.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <pre>
 .
 ├── LICENSE.md
 ├── README.md
@@ -28,20 +43,19 @@ file.
 ├── index.js
 ├── package.json
 ├── public
-│   └── example.txt -----> This is the file we're adding
-├── testem.js
-├── tests
+│   └── example.txt -----> This is the
+├── testem.js              file we're
+├── tests                  adding
 │   └── ...
 └── vendor
-```
-
-This file is then copied to `/addon-01-public-folder/example.txt` folder.
-
-```
-dist/
+      </pre>
+    </td>
+    <td valign="top">
+      <pre>
+.
 ├── addon-01-public-folder
-│   └── example.txt
-├── assets
+│   └── example.txt -----> This is where
+├── assets                 it's copied
 │   └── ...
 ├── crossdomain.xml
 ├── index.html
@@ -49,9 +63,12 @@ dist/
 ├── testem.js
 └── tests
     └── index.html
+      </pre>
+    </td>
+  </tr>
+</table>
 
-3 directories, 20 files
-```
+Folders inside /public folder will be also copied.
 
 ## Try it out
 
