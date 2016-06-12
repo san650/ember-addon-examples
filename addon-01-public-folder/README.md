@@ -4,11 +4,11 @@ Files inside the addon's `/public` folder are copied to `/<my-addon>/` folder at
 
 You can reference these files from your project using a full path `/<my-addon>/a-file.xyz`.
 
-You can try this out by running `ember server` in your addon and navigating to `http://localhost:4200/<addon-name>/a-file.xyz`
+Try this out by running `ember server` in your addon and navigating to `http://localhost:4200/<addon-name>/a-file.xyz`
 
-You can read more about this behavior on https://ember-cli.com/extending/#importing-static-files
+Read more about this behavior on https://ember-cli.com/extending/#importing-static-files
 
-This is part of [ember-addon-examples](https://github.com/san650/ember-addon-examples)
+_This is part of [ember-addon-examples](https://github.com/san650/ember-addon-examples)_
 
 ## Example
 
