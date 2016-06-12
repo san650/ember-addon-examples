@@ -1,26 +1,89 @@
-# Addon-01-public-folder
+# addon's /public folder
 
-This README outlines the details of collaborating on this Ember addon.
+Files inside the addon's `/public` folder are copied to `/<my-addon>/` folder at build time where `<my-addon>` is replaced by your addon's name.
 
-## Installation
+You can reference these files from your project using a full path `/<my-addon>/a-file.xyz`.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+You can try this out by running `ember server` in your addon and navigating to `http://localhost:4200/<addon-name>/a-file.xyz`
 
-## Running
+You can read more about this behavior on https://ember-cli.com/extending/#importing-static-files
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+This is part of [ember-addon-examples](https://github.com/san650/ember-addon-examples)
 
-## Running Tests
+## Example
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+Look at the file structure and notice that we're adding a `/public/example.txt`
+file.
 
-## Building
+```
+.
+├── LICENSE.md
+├── README.md
+├── addon
+├── app
+├── bower.json
+├── config
+│   └── ...
+├── ember-cli-build.js
+├── index.js
+├── package.json
+├── public
+│   └── example.txt
+├── testem.js
+├── tests
+│   └── ...
+└── vendor
+```
 
-* `ember build`
+This file is then copied to `/addon-01-public-folder/example.txt` folder.
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+```
+dist/
+├── addon-01-public-folder
+│   └── example.txt
+├── assets
+│   └── ...
+├── crossdomain.xml
+├── index.html
+├── robots.txt
+├── testem.js
+└── tests
+    └── index.html
+
+3 directories, 20 files
+```
+
+## Try it out
+
+### Installation
+
+```
+$ npm install
+$ bower install
+```
+
+### Running
+
+```
+$ ember server
+```
+
+Then visit http://localhost:4200/addon-01-public-folder/example.txt
+
+### Running Tests
+
+```
+$ ember test
+```
+
+### Building
+
+```
+$ ember build
+```
+
+## License
+
+ember-addon-examples is licensed under the MIT license.
+
+See [LICENSE](../LICENSE.md) for the full license text.
