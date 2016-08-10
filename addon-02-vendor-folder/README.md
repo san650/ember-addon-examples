@@ -8,8 +8,7 @@ _This is part of [ember-addon-examples](https://github.com/san650/ember-addon-ex
 
 ## Example
 
-First we include in the addon the files we want to have available during the
-build process
+First we include in the addon the files we want to have available during the build process
 
 <table>
   <tr>
@@ -47,8 +46,7 @@ build process
   </tr>
 </table>
 
-Then we configure the build by editing the `index.js` file and telling ember-cli's
-build process to include these files. Note that ember-cli knows how to include
+Then we configure the build by editing the `index.js` file and tell ember-cli's build process to include these files. Note that ember-cli knows how to include
 `.js` and `.css` files.
 
 ```js
@@ -62,8 +60,7 @@ module.exports = {
 };
 ```
 
-After the build of the application, the content of those files will be appendend
-in `vendor.css` and `vendor.js` files.
+After the build of the application, the content of those files will be appendend in `vendor.css` and `vendor.js` files.
 
 ```
 dist/
@@ -87,35 +84,6 @@ dist/
 ├── testem.js
 └── tests
     └── index.html
-```
-
-## Try it out
-
-### Installation
-
-```
-$ npm install
-$ bower install
-```
-
-### Running
-
-```
-$ ember server
-```
-
-Then visit http://localhost:4200/addon-01-public-folder/example.txt
-
-### Running Tests
-
-```
-$ ember test
-```
-
-### Building
-
-```
-$ ember build
 ```
 
 ## License

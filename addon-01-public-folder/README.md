@@ -70,35 +70,6 @@ _This is part of [ember-addon-examples](https://github.com/san650/ember-addon-ex
 
 Folders inside /public folder will be also copied.
 
-## Try it out
-
-### Installation
-
-```
-$ npm install
-$ bower install
-```
-
-### Running
-
-```
-$ ember server
-```
-
-Then visit http://localhost:4200/addon-01-public-folder/example.txt
-
-### Running Tests
-
-```
-$ ember test
-```
-
-### Building
-
-```
-$ ember build
-```
-
 ## License
 
 ember-addon-examples is licensed under the MIT license.
