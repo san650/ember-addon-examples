@@ -7,6 +7,7 @@ __This is a work in progress. There's nothing to see here yet.__
 ### `app`, `addon` and `public` folders
 
 * [addon that copies files from a public/ folder](./addon-01-public-folder#readme)
+* [addon that copies files from a vendor/ folder](./addon-02-vendor-folder#readme)
 * addon that copies files from app/ folder
 * addon that copies files from addon/ folder
 
